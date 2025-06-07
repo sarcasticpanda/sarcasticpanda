@@ -3,10 +3,10 @@
 <h1 align="center">Hellow Mate !!</h1>
 
 <div align="center">
-  <a href="https://www.linkedin.com/in/saubhagya-kashyap-sk15072004/"><img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=flat" height="30" /></a>
-  <a href="https://discord.com/users/751285662879056032"><img src="https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=7289DA&logoColor=white&labelColor=&style=flat" height="30" /></a>
-  <a href="mailto:saubhagyakashyap44@gmail.com"><img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=flat" height="30" /></a>
-  <a href="https://www.instagram.com/_saubhagyak.07/"><img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=flat" height="30" /></a>
+  <a href="https://www.linkedin.com/in/saubhagya-kashyap-sk15072004/" target="_blank"><img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=flat" height="30" /></a>
+  <a href="https://discord.com/users/751285662879056032" target="_blank"><img src="https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=7289DA&logoColor=white&labelColor=&style=flat" height="30" /></a>
+  <a href="mailto:saubhagyakashyap44@gmail.com" target="_blank"><img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=flat" height="30" /></a>
+  <a href="https://www.instagram.com/_saubhagyak.07/" target="_blank"><img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=flat" height="30" /></a>
 </div>
 
 ###
