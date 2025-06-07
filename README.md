@@ -3,10 +3,10 @@
 <h1 align="center">Hellow Mate !!</h1>
 
 <div align="center">
-  <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=flat" height="30" alt="linkedin logo"  />
-  <img src="https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=7289DA&logoColor=white&labelColor=&style=flat" height="30" alt="discord logo"  />
-  <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=flat" height="30" alt="gmail logo"  />
-  <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=flat" height="30" alt="instagram logo"  />
+  <a href="https://www.linkedin.com/in/saubhagya-kashyap-sk15072004/"><img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=flat" height="30" /></a>
+  <a href="https://discord.com/users/751285662879056032"><img src="https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=7289DA&logoColor=white&labelColor=&style=flat" height="30" /></a>
+  <a href="mailto:saubhagyakashyap44@gmail.com"><img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=flat" height="30" /></a>
+  <a href="https://www.instagram.com/_saubhagyak.07/"><img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=flat" height="30" /></a>
 </div>
 
 ###
@@ -17,7 +17,7 @@
 
 ###
 
-<p align="left">👋 Hi, I’m Saubhagya Kashyap from Lucknow, India.<br><br>🚀 Love building impactful tech.<br><br>📚 Currently learning backend development and API integration<br><br>💡 Passionate about solving real-world problems with tech<br><br>🛠 Skilled in React, Python, C++, and data visualization<br><br>⚡ I enjoy hackathons, open-source, and UI/UX design .</p>
+<p align="left">👋 Hi, I'm Saubhagya Kashyap from Lucknow, India.<br><br>🚀 Love building impactful tech.<br><br>📚 Currently learning backend development and API integration<br><br>💡 Passionate about solving real-world problems with tech<br><br>🛠 Skilled in React, Python, C++, and data visualization<br><br>⚡ I enjoy hackathons, open-source, and UI/UX design .</p>
 
 ###
 
