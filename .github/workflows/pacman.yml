@@ -1,8 +1,8 @@
 name: Generate pacman animation
 
 on:
-  schedule: # execute every 12 hours
-    - cron: "* */12 * * *"
+  schedule: # execute every 6 hours for more frequent updates
+    - cron: "0 */6 * * *"
 
   workflow_dispatch:
 
@@ -22,12 +22,22 @@ jobs:
         uses: abozanona/pacman-contribution-graph@main
         with:
           github_user_name: ${{ github.repository_owner }}
-
+          theme: dracula # Using dracula theme to match your profile
+          pacman_color: "#ffd700" # Golden color for Pacman
+          ghost_color: "#ff69b4" # Pink color for ghosts
+          dot_color: "#00ff00" # Green color for dots
+          background_color: "#282a36" # Dark background
+          animation_speed: 0.8 # Slightly faster animation
+          show_ghosts: true # Show ghosts
+          show_dots: true # Show dots
+          show_pacman: true # Show Pacman
+          show_contribution: true # Show contribution graph
 
       - name: push pacman-contribution-graph.svg to the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
           build_dir: dist
+          commit_message: "Update Pacman animation 🎮"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
