@@ -15,13 +15,20 @@ jobs:
     permissions:
       contents: write
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 15
 
     steps:
       - name: generate pacman-contribution-graph.svg
         uses: abozanona/pacman-contribution-graph@main
+        env:
+          NODE_OPTIONS: --max-old-space-size=4096
+          # Optional: provide a Personal Access Token via the PERSONAL_TOKEN secret to include private contributions.
+          # Falls back to the default GITHUB_TOKEN if PERSONAL_TOKEN is not set.
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN || secrets.GITHUB_TOKEN }}
         with:
           github_user_name: ${{ github.repository_owner }}
+          include_private: true
+          output_format: svg
           theme: dracula # Using dracula theme to match your profile
           pacman_color: "#ffd700" # Golden color for Pacman
           ghost_color: "#ff69b4" # Pink color for ghosts

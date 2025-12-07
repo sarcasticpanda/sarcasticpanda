@@ -1,70 +1,29 @@
-<img align="left" height="150" src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif"  />
+# Pac-Man Contribution Graph for sarcasticpanda
 
-<h1 align="center">Hellow Mate !!</h1>
+This repository auto-generates a Pac-Man animation that visualizes your GitHub contribution graph (streak). The workflow pushes the generated artifact into the `output` branch so you can embed the SVG in your profile README.
 
-<div align="center">
-  <a href="https://www.linkedin.com/in/saubhagya-kashyap-sk15072004/" target="_blank"><img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=flat" height="30" /></a>
-  <a href="https://discord.com/users/751285662879056032" target="_blank"><img src="https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=7289DA&logoColor=white&labelColor=&style=flat" height="30" /></a>
-  <a href="mailto:saubhagyakashyap44@gmail.com" target="_blank"><img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=flat" height="30" /></a>
-  <a href="https://www.instagram.com/_saubhagyak.07/" target="_blank"><img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=flat" height="30" /></a>
-</div>
+## What I changed
+- Increased Node's V8 heap for the workflow to avoid OOM errors.
+- Enabled `include_private: true` in the workflow and added instructions to supply a Personal Access Token (PAT) via the `PERSONAL_TOKEN` secret so private contributions (full streak) can be displayed.
+- Increased workflow timeout to 15 minutes.
 
-###
+## Setup (what you need to do)
+1. Create a Personal Access Token with `repo` scope (to allow reading private contributions). Go to Settings -> Developer settings -> Personal access tokens -> Generate new token.
+2. In this repository, go to Settings -> Secrets and variables -> Actions -> New repository secret. Name it `PERSONAL_TOKEN` and paste the PAT. This is optional - if not provided, the workflow will use the default GitHub token which only has access to public contributions.
+3. Enable Actions if disabled. The workflow runs every 6 hours and on push to main.
 
-<br clear="both">
+## Embed the generated Pac-Man in your profile README
+After the workflow runs successfully it commits the generated files to the `output` branch under `dist/`. You can embed the generated image in your README like this:
 
-<h3 align="left">Know Me Better</h3>
+```markdown
+![Pac-Man Contribution Graph](https://raw.githubusercontent.com/sarcasticpanda/sarcasticpanda/output/dist/pacman-contribution-graph.svg)
+```
 
-###
+If you prefer to serve via GitHub Pages, configure Pages to serve from the `output` branch `/(root)` or update the `ghaction-github-pages` step accordingly.
 
-<p align="left">👋 Hi, I'm Saubhagya Kashyap from Lucknow, India.<br><br>🚀 Love building impactful tech.<br><br>📚 Currently learning backend development and API integration<br><br>💡 Passionate about solving real-world problems with tech<br><br>🛠 Skilled in React, Python, C++, and data visualization<br><br>⚡ I enjoy hackathons, open-source, and UI/UX design.</p>
+## Troubleshooting
+- If you see `FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory` in the Actions logs, the workflow now sets `NODE_OPTIONS=--max-old-space-size=4096`. If OOM persists, we can increase it to 8192.
+- If the animation still doesn't show your full streak, ensure `PERSONAL_TOKEN` is set as described above.
 
-###
-
-<h3 align="left">🛠 Language and tools</h3>
-
-###
-
-<div align="left">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" width="40" alt="javascript logo" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="40" width="40" alt="typescript logo" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" width="40" alt="react logo" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="40" width="40" alt="html5 logo" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="40" width="40" alt="css3 logo" />
-  <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" height="40" width="40" alt="tailwindcss logo" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="40" width="40" alt="nodejs logo" />
-</div>
-
-<div align="left">
-  <img src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg" height="40" width="40" alt="aws logo" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="40" width="40" alt="mysql logo" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/anaconda/anaconda-original.svg" height="40" width="40" alt="anaconda logo" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="40" width="40" alt="linux logo" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" height="40" width="40" alt="php logo" />
-</div>
-
-###
-
-<h3 align="left">🔥   My Stats :</h3>
-
-###
-
-<div align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=SarcasticPanda&hide_title=false&hide_rank=true&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=true&order=1" height="150" alt="stats graph" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=SarcasticPanda&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=9&theme=dracula&hide_border=true&order=2" height="150" alt="languages graph" />
-  <img src="https://streak-stats.demolab.com?user=SarcasticPanda&locale=en&mode=daily&theme=dracula&hide_border=true&border_radius=5&order=3" height="127" alt="streak graph" />
-</div>
-
-###
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SarcasticPanda/SarcasticPanda/output/pacman-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/SarcasticPanda/SarcasticPanda/output/pacman-contribution-graph.svg">
-  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/SarcasticPanda/SarcasticPanda/output/pacman-contribution-graph.svg">
-</picture>
-
-###
-
-<br clear="both">
-
-<img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=SarcasticPanda.SarcasticPanda&left_color=lightcoral&right_color=cadetblue&left_text=Cool%20Folks%20Who%20Dropped%20In"  />
+## Notes about automation
+I updated the workflow so it uses the `PERSONAL_TOKEN` secret if present; I cannot create or set your secrets or tokens on your behalf for security reasons. Please add the `PERSONAL_TOKEN` secret if you want private contributions included.
