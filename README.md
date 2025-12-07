@@ -8,8 +8,8 @@ This repository auto-generates a Pac-Man animation that visualizes your GitHub c
 - Increased workflow timeout to 15 minutes.
 
 ## Setup (what you need to do)
-1. Create a Personal Access Token with `repo` scope (to allow reading private contributions). Go to Settings -&gt; Developer settings -&gt; Personal access tokens -&gt; Generate new token.
-2. In this repository, go to Settings -&gt; Secrets and variables -&gt; Actions -&gt; New repository secret. Name it `PERSONAL_TOKEN` and paste the PAT. This is optional, but required if you want private contributions included.
+1. Create a Personal Access Token with `repo` scope (to allow reading private contributions). Go to Settings -> Developer settings -> Personal access tokens -> Generate new token.
+2. In this repository, go to Settings -> Secrets and variables -> Actions -> New repository secret. Name it `PERSONAL_TOKEN` and paste the PAT. This is optional - if not provided, the workflow will use the default GitHub token which only has access to public contributions.
 3. Enable Actions if disabled. The workflow runs every 6 hours and on push to main.
 
 ## Embed the generated Pac-Man in your profile README
