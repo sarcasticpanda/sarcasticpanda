@@ -23,7 +23,7 @@ jobs:
         env:
           NODE_OPTIONS: --max-old-space-size=4096
           # Optional: provide a Personal Access Token via the PERSONAL_TOKEN secret to include private contributions.
-          GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN || secrets.GITHUB_TOKEN }}
         with:
           github_user_name: ${{ github.repository_owner }}
           include_private: true
