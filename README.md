@@ -17,7 +17,13 @@
 
 ###
 
-<p align="left">👋 Hi, I'm Saubhagya Kashyap from Lucknow, India.<br><br>🚀 Love building impactful tech.<br><br>📚 Currently learning backend development and API integration<br><br>💡 Passionate about solving real-world problems with tech<br><br>🛠 Skilled in React, Python, C++, and data visualization<br><br>⚡ I enjoy hackathons, open-source, and UI/UX design.</p>
+<p align="left">
+<strong>Hi, I'm Saubhagya Kashyap from Lucknow, India.</strong> 👋<br><br>
+I work on turning <strong>raw, messy data into systems that think and act</strong> ⚙️<br><br>
+Focused on <strong>data science, computer vision, and building ML systems that scale beyond experiments</strong> 📊<br><br>
+Strong in <strong>Python, data analysis, and model development</strong>, with a growing focus on system-level impact 🧠<br><br>
+I prefer solutions that are <strong>clean, efficient, and actually usable in the real world</strong> 🚀<br><br>
+</p>
 
 ###
 
@@ -61,7 +67,11 @@
 </picture>
 
 ###
-
+<p align="center" style="font-size:22px; font-weight:bold;">
+Operating as Sarcastic Panda<br>
+— brewing data and waiting on cookies 🍪
+</p>
 <br clear="both">
 
 <img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=SarcasticPanda.SarcasticPanda&left_color=lightcoral&right_color=cadetblue&left_text=Cool%20Folks%20Who%20Dropped%20In"  />
+
